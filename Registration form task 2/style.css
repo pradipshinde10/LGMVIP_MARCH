@@ -1,0 +1,125 @@
+body {
+    background-image: linear-gradient(-120deg, #3bb60b,  #9bc2d3, #d8974c, #240FEB);
+    background-size: 400% 400%;
+    text-align: center;
+  animation: gradient 20s ease infinite;
+  color: rgb(255, 255, 255);
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+};
+h1 {
+    text-align: center;
+    margin: 10vh 0 0 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.center {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    table-layout: initial;
+    margin: 40px auto;
+    border-style: groove;
+    background-color: rgb(234, 153, 71);
+    color: black;
+}
+
+table.list {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    border-radius: 0.5cm;
+}
+
+td {
+    border: 5px solid rgb(234, 153, 71);
+    text-align: left;
+    padding: 8px 15px;
+    background-color: rgb(121, 206, 214);
+    color: #000000;
+}
+
+tr:nth-child(even),
+table.list thread>tr {
+    background-color: #d0f1bf;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 10px 10px;
+    margin: 0px 0 10px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: rgb(234, 153, 71);
+    border-radius: 1.5cm;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+
+input[type="reset"]:hover{
+    background: rgb(198, 9, 9);
+}
+
+input[type="submit"]:hover{
+    background:#240FEB
+}
+input[type="submit"],
+input[type="reset"] {
+    background: rgb(234, 153, 71);
+    color: black;
+    font-size: 1.2rem;
+    font-family:'Times New Roman';
+}
+
+tbody {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input-part {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+button {
+    background: rgb(234, 153, 71);
+    color: black;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+}

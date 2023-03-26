@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	background: #070707;
+	
+}
+h1{
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+}
+.container{
+	position: relative;
+	max-width: 400px;
+	padding: 10px;
+	margin: 50px auto;
+	background: linear-gradient(139deg,#03ddffcb 0%,#ff0381b6 90%);
+	/* background-color: rgb(107, 162, 178); */
+	/* border-radius: 80px; */
+}
+.addTask{
+	width: 100%;
+	display: flex;
+	padding: 5px 0;
+}
+.addTask > input[type="text"]{
+	width: 90%;
+	color: rgb(18, 17, 17);
+	border: 2px solid rgb(186, 7, 7);
+	border-bottom: 3px soild red;
+	background: rgb(229, 198, 229);
+	padding: 4px;
+	font-size: 22px;
+	outline: 2px;
+	font: bold;
+	text-transform: capitalize;
+}
+.addTask button{
+	margin: 0 8px;
+	background: rgb(190, 60, 119);
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.addTask button:hover{
+	background-color:cyan;
+}
+.notCompleted, .Completed{
+	margin: 2px 0;
+	padding: 10px;
+}
+h3{
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	/* color: #fff; */
+}
+.notCompleted h3{
+	color: aqua;
+}
+.Completed h3{
+	color: greenyellow;
+}
+.Completed h3:hover{
+	color: aquamarine;
+}
+.notCompleted h3:hover{
+	color: red;
+}
+ol{
+	list-style: none;
+	counter-reset: my-counter;
+}
+ol li{
+	width: 100%;
+	/* text-transform: capitalize; */	
+	padding: 10px;
+	margin: 5px 0;
+	background: #b40a35bb;
+	font-size: 22px;
+	color: white;
+	counter-increment: my-counter;
+}
+ol.Completed li{
+	background: #91b1c6;
+}
+
+li button{
+	float: right;
+	padding: 5px;
+	font-size: 20px;
+	line-height: 28px;
+	margin-right: 15px;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+li button:hover{
+	color: red;
+}
+#chechbtn:hover{
+	color: greenyellow;
+}
